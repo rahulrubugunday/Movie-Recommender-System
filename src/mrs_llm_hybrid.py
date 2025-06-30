@@ -75,6 +75,9 @@ def hybrid_search(query, top_k=10, alpha=0.6):
     for idx, score in top_indices:
         print(f"Title: {df.iloc[idx]['title']} \nYear: {df.iloc[idx]['release_year']}\nType: {df.iloc[idx]['type']}\nDescription: {df.iloc[idx]['description']}\nScore: {score:.4f}\n---")
 
-query = "Something fun like The Martian, but animated"
 
+
+
+#query = "Something fun like The Martian, but animated"
+query = input("What are you looking for?\n")
 hybrid_search(query, top_k=5)
